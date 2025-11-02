@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace;
+    /* border: 1px solid black; */
+}
+
+
+/* Basic Styling  */
+
+.main-container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto ;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* Header Styling */
+
+header{
+    background-color: rgb(252, 186, 4);
+    box-shadow: 0 5px 10px rgba(99, 47, 5, 0.713);
+    position: relative;
+    z-index: 10;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem;
+    height: 12vh;
+
+}
+
+.navbar .logo{
+    font-size: 3rem;
+    color: rgb(99, 48, 5);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.search-container input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: .8rem 1rem;
+    font-size: 1.3rem;
+    background: transparent;
+    border-bottom: .2rem solid gray;
+    transition:  .3s ease-in-out;
+    
+}
+
+.search-container input:focus{
+    border-color: rgb(99, 48, 5);
+}
+
+.search-container input:focus::placeholder{
+    color: rgb(99, 48, 5);
+}
+
+.search-container form{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.serach-btn{
+    font-size: 1.5rem;
+    border: 2px solid rgb(99, 48, 5);
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    background-color: rgb(155, 74, 7);
+    color: rgb(252, 186, 4);
+    transition: .3s ease-in-out;
+}
+
+.serach-btn:hover{
+    background-color: rgb(252, 186, 4);
+    color: rgb(155, 74, 7);
+}
+
+/* BUTTONS SECTION  */
+
+.button-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    background-color: rgb(225, 208, 141);
+
+}
+.button-container{
+    
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+
+}
+
+.button-container ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.button-container li{
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.mood-btn{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    /* margin-bottom: .4rem; */
+    border-radius: .5rem;
+    color: rgb(99, 48, 5);
+    background-color: rgb(252, 186, 4);
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: .3s ease-in-out;
+}
+
+.mood-btn:hover{
+    background-color: rgb(99, 48, 5);
+    color: rgb(252, 186, 4);
+}
+
+/* CARD SECTION */
+
+
+
+
+
+
+/* Mediaquery for responsive design */
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        padding:1rem;
+        height: 35vh;
+
+    }
+    .logo{
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    /* BUTTONS SECTION */
+
+    .button-section{
+        height: 25rem;
+    }
+
+    /* CARD SECTION */
+}
