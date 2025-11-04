@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Song </title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Song</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    
     <!-- NAVBAR  -->
-     <header>
+    <header>
         <nav class="navbar main-container">
             <!-- <div class=" nav-container"> -->
-                <h1 class="logo">TuneMood</h1>
+            <h1 class="logo">TuneMood</h1>
 
-                <div class="search-container">
-                    <form>
-                        <input type="text" name="text" id="" placeholder="Enter Song..." autocomplete="off">
-                        <a href="#" class="serach-btn">Search</a>
-                    </form>
-                </div>
+            <div class="search-container">
+                <form>
+                    <input type="text" name="text" class="input-value" placeholder="Enter Song..." autocomplete="off" />
+                    <a href="#" class="serach-btn">Search</a>
+                </form>
+            </div>
             <!-- </div> -->
-
         </nav>
 
         <div class="emoji-container"></div>
-     </header>
+    </header>
 
-     <!-- MAIN SECTION  -->
+    <!-- MAIN SECTION  -->
 
-     <main>
+    <main>
         <!-- BUTTONS SECTION  -->
         <section class="button-section">
-             <div class="button-container main-container">
+            <div class="button-container main-container">
                 <ul>
                     <li>
                         <a href="#" class="mood-btn" id="happyBtn">😊Happy</a>
                     </li>
                     <li>
-                        <a href="#" class="mood-btn" id="sadBtn" >😥Sad</a>
+                        <a href="#" class="mood-btn" id="sadBtn">😥Sad</a>
                     </li>
                     <li>
-                        <a href="#" class="mood-btn" id="romanticBtn" >💞Romantic</a>
+                        <a href="#" class="mood-btn" id="romanticBtn">💞Romantic</a>
                     </li>
                     <li>
-                        <a href="#" class="mood-btn" id="energyBtn" >⚡Energetic</a>
+                        <a href="#" class="mood-btn" id="energyBtn">⚡Energetic</a>
                     </li>
                     <li>
                         <a href="#" class="mood-btn" id="relaxBtn">🌿Relaxing</a>
@@ -59,7 +59,7 @@
                         <a href="#" class="mood-btn" id="rainBtn">🌧Rainy Mood</a>
                     </li>
                 </ul>
-             </div>
+            </div>
         </section>
 
         <!-- CARD SECTION  -->
@@ -68,11 +68,19 @@
             <div class="card-container">
                 <div class="card-row main-container">
                     <!-- Cards will be dynamically inserted here -->
+                    <!-- <div class="card">
+                        <img src="/250x250-000000-80-0-0.jpg" alt="">
+                        <h3>Lorem ipsum dolor sit amet.</h3>
+                        <p>saurabh patil</p>
+                        <audio src="/mzaf_17135561476274403451.plus.aac.p.m4a" controls></audio>
+                     </div> -->
+                    <p id="message" class="message"></p>
                 </div>
             </div>
         </section>
-     </main>
+    </main>
 
     <script src="./script.js"></script>
 </body>
+
 </html>
