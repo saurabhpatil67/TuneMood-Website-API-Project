@@ -119,7 +119,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(80vh - 12vh);
+    height: calc(70vh - 12vh);
     background-color: rgb(225, 208, 141);
 }
 
@@ -249,6 +249,25 @@ header {
     /* BUTTONS SECTION */
 
     .button-section {
-        height: 25rem;
+        height: 31rem;
+        
+    }
+    .button-container{
+        padding-top: 15rem;
+        padding-inline: 2rem;
+    }
+
+     /* CARD SECTION  */
+    .card-row{
+        margin-top: 5rem;
+        gap: 3rem;
+    }
+}
+
+/* Media query for mobile devices */
+
+@media screen and (max-width: 600px) {
+    .card-row{
+        margin-top: 15rem;
     }
 }
